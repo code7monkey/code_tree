@@ -5,7 +5,7 @@ s = 0
 
 for i in range(0,n,2):
     s += lst[i]
-print(s)
+print(s,end=' ')
 
 cnt = 0
 s  = 0

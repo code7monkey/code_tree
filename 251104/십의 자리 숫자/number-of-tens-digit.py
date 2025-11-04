@@ -3,7 +3,9 @@ lst = list(map(int,input().split()))
 arr = [0]*9
 lst2 = []
 for i in lst:
-    if i < 10:
+    if i == 0:
+        break
+    elif i < 10:
         continue
     else: 
         lst2.append(i//10)

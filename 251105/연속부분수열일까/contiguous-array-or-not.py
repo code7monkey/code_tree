@@ -1,10 +1,5 @@
 na, nb = map(int,input().split())
 
-if na < nb:
-    print('No')
-
-break
-
 a = list(map(int,input().split()))
 b = list(map(int,input().split()))
 
@@ -20,12 +15,14 @@ a_chk = a[idx:idx+nb]
 
 cnt = 0
 
-for i,j in zip(a_chk,b):
-    if i != j:
-        print('No')
-        break
-    else:
-        cnt +=1
-
-if cnt == nb:
-    print('Yes')
+if na < nb:
+    print('No')
+else:
+    for i,j in zip(a_chk,b):
+        if i != j:
+            print('No')
+            break
+        else:
+            cnt +=1
+    if cnt == nb:
+        print('Yes')

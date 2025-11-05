@@ -17,6 +17,8 @@ cnt = 0
 
 if na < nb:
     print('No')
+elif idx == -1:
+    print('No')
 else:
     for i,j in zip(a_chk,b):
         if i != j:

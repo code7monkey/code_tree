@@ -4,27 +4,22 @@ a = list(map(int,input().split()))
 b = list(map(int,input().split()))
 
 start = b[0]
+lst = []
 
-idx = -1
 for i in range(na):
     if a[i] == start:
-        idx = i
-        break
-
-a_chk = a[idx:idx+nb]
-
+        lst.append(i)
 cnt = 0
+if len(lst) == 0:
+    print('No')
 
-if na < nb:
-    print('No')
-elif idx == -1:
-    print('No')
-else:
-    for i,j in zip(a_chk,b):
-        if i != j:
+for i in lst:
+    a_chk = a[i:i+nb]
+    for j,k in zip(a_chk,b):
+        if j != k:
             print('No')
             break
         else:
-            cnt +=1
-    if cnt == nb:
-        print('Yes')
+            cnt += 1       
+if cnt == nb:
+    print('Yes')

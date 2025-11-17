@@ -5,6 +5,7 @@ ll = 0
 for _ in range(n):
     ss = input()
     ll += len(ss)
-    cnt += ss.count('a')
+    if ss[0] =='a':
+        cnt += 1
 
 print(ll,cnt)

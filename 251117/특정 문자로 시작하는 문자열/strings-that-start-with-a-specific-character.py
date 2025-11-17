@@ -11,7 +11,7 @@ cnt = 0
 ll = 0
 
 for st in lst:
-    if k in st:
+    if st[0] == k:
         cnt += 1
         ll += len(st)
 

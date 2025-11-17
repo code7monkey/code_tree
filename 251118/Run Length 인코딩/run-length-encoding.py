@@ -12,6 +12,8 @@ for i in range(n-1):
             lst.append(aa[i])
             lst.append(cnt)
         else:
+            lst.append(aa[i])
+            lst.append(cnt)
             lst.append(aa[i+1])
             lst.append(1)
     elif aa[i] == aa[i+1]:

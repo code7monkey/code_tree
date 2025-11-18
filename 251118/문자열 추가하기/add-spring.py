@@ -1,2 +1,2 @@
 ss = input()
-print(ss,'Hello',end='')
+print(ss,'Hello',sep='')

@@ -8,4 +8,5 @@ for i in range(n):
         break
 
 if i == n-1:
-    print('No')
+    if a[i] != b:
+        print('No')

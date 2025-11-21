@@ -10,4 +10,4 @@ for i in range(n):
         lst[i] = a
 
 for i in range(n):
-    print(lst,end='')
+    print(lst[i],end='')

@@ -9,7 +9,7 @@ def calculate(x,n,m):
     elif x == '-':
         print(f'{n} - {m} = {n-m}')
     elif x =='/':
-        print(f'{n} / {m} = {n/m}')
+        print(f'{n} / {m} = {n//m}')
     elif x =='*':
         print(f'{n} * {m} = {n*m}')
     else:

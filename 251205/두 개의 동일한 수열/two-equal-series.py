@@ -11,6 +11,7 @@ cnt = 0
 for i in range(n):
     if a[i] != b[i]:
         print('No')
+        break
     else:
         cnt += 1
 

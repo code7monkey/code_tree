@@ -8,4 +8,4 @@ for _ in range(n):
         lst.append(x)
 
 lst.sort()
-print(lst[2])
+print(lst[k-1])

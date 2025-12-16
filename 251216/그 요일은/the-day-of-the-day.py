@@ -18,4 +18,7 @@ while True:
         month += 1
         day = 1
 
-print(1+ (elapsed_time//7))
+day_lst = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+x = day_lst.index(A)
+
+print((elapsed_time - x)//7 +1)

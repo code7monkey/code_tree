@@ -5,7 +5,11 @@ elapsed_time = 0
 day, hour, mins = 11, 11, 11
 
 while True:
-    if a ==11 and b <= 11 and c < 11:
+    if a ==11 and b < 11 :
+        elapsed_time = -1
+        break
+
+    if a == 11 and b == 11 and c <11:
         elapsed_time = -1
         break
 

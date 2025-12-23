@@ -6,7 +6,7 @@ ans = []
 cnt = 0
 for i in range(n):
     cnt += 1
-    if lst[i] != lst[i - 1]:
+    if lst[i] != lst[i - 1] or i == n-1:
         ans.append(cnt)
         cnt = 0
 

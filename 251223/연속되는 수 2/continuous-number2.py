@@ -6,10 +6,11 @@ ans = []
 cnt = 0
 for i in range(n):
     cnt += 1
-    if i ==0:
-        continue
-    elif lst[i] != lst[i - 1]:
+    if lst[i] != lst[i - 1]:
         ans.append(cnt)
         cnt = 0
 
-print(max(ans))
+if n == 1:
+    print(1)
+else:
+    print(max(ans))

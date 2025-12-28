@@ -1,6 +1,6 @@
 n, m = map(int, input().split())
 
-max_t = 1000
+max_t = 1000000
 real_time = 0
 ans = []
 cnt = 0

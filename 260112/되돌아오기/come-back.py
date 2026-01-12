@@ -27,6 +27,9 @@ for _ in range(n):
         if x == 0 and y ==0:
             print(time)
             is_time = True
+    if is_time:
+        break
+
 
 if not is_time:
     print(-1)
